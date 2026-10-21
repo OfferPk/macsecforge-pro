@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="100%" stop-color="#0c1222"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e172e"/>
+      <stop offset="100%" stop-color="#070c1a"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Window Header -->
+  <rect x="30" y="25" width="1140" height="60" rx="8" fill="#080e1d" stroke="#1d2847" stroke-width="1.5"/>
+  <circle cx="60" cy="55" r="6" fill="#ef4444"/>
+  <circle cx="80" cy="55" r="6" fill="#f59e0b"/>
+  <circle cx="100" cy="55" r="6" fill="#10b981"/>
+  
+  <text x="130" y="60" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold">MACsecForge Pro v1.0.0 — IEEE 802.1AE / MKA Wire-Speed Encryption Studio</text>
+  <rect x="980" y="42" width="165" height="26" rx="4" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+  <text x="992" y="59" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold">ZERO-TRUST SECURE</text>
+
+  <!-- Left Column: Inputs & Preset -->
+  <rect x="30" y="105" width="400" height="565" rx="8" fill="url(#cardGrad)" stroke="#1d2847" stroke-width="1"/>
+  <text x="50" y="135" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold">Industry Architecture Preset</text>
+  <rect x="50" y="150" width="360" height="34" rx="4" fill="#070c1a" stroke="#10b981" stroke-width="1"/>
+  <text x="65" y="172" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">400G Cloud Data Center Interconnect (AWS/Azure) [Grade A+]</text>
+
+  <text x="50" y="215" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold">Node &amp; Interface Configuration</text>
+  <rect x="50" y="230" width="170" height="30" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="60" y="250" fill="#94a3b8" font-family="monospace" font-size="11">IAD-DCI-SPINE-01</text>
+  
+  <rect x="235" y="230" width="175" height="30" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="245" y="250" fill="#94a3b8" font-family="monospace" font-size="11">FourHundredGigE0/0/0/0</text>
+
+  <rect x="50" y="275" width="170" height="30" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="60" y="295" fill="#cbd5e1" font-family="monospace" font-size="11">Line Rate: 400 Gbps</text>
+
+  <rect x="235" y="275" width="175" height="30" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="245" y="295" fill="#38bdf8" font-family="monospace" font-size="11">GCM-AES-XPN-256</text>
+
+  <text x="50" y="340" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold">MKA Key Material &amp; SecTAG</text>
+  <rect x="50" y="355" width="360" height="26" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="60" y="372" fill="#f59e0b" font-family="monospace" font-size="10">CAK: F4A7C12B890E543D7189BA02C45DEF98A012B34C56D78E...</text>
+
+  <rect x="50" y="390" width="360" height="26" rx="4" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="60" y="407" fill="#c084fc" font-family="monospace" font-size="10">CKN: 0102030405060708090A0B0C0D0E0F1011121314151617...</text>
+
+  <rect x="50" y="430" width="360" height="100" rx="6" fill="#080e1d" stroke="#1d2847" stroke-width="1"/>
+  <text x="70" y="455" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">✓ Explicit SCI (16-Byte SecTAG)</text>
+  <text x="70" y="480" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">✓ Strict Fail-Closed (must-secure)</text>
+  <text x="70" y="505" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">✓ Replay Protection (Window: 2048)</text>
+
+  <!-- Right Column: Metrics, Audit, Wireframe & Synthesis -->
+  <!-- Top Metrics -->
+  <rect x="450" y="105" width="720" height="85" rx="8" fill="url(#cardGrad)" stroke="#1d2847" stroke-width="1"/>
+  <rect x="470" y="120" width="150" height="55" rx="6" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="545" y="145" text-anchor="middle" fill="#34d399" font-family="monospace" font-size="18" font-weight="bold">400G</text>
+  <text x="545" y="162" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">LINK SPEED</text>
+
+  <rect x="640" y="120" width="150" height="55" rx="6" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="715" y="145" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="18" font-weight="bold">94.0 Mpps</text>
+  <text x="715" y="162" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">MAX PACKET RATE</text>
+
+  <rect x="810" y="120" width="170" height="55" rx="6" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="895" y="145" text-anchor="middle" fill="#34d399" font-family="monospace" font-size="18" font-weight="bold">&gt; 1,000 Years</text>
+  <text x="895" y="162" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">PN ROLLOVER TIME</text>
+
+  <rect x="1000" y="120" width="150" height="55" rx="6" fill="#070c1a" stroke="#1d2847" stroke-width="1"/>
+  <text x="1075" y="145" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="18" font-weight="bold">9032 Bytes</text>
+  <text x="1075" y="162" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">REQUIRED L2 MTU</text>
+
+  <!-- 10-Point Zero-Trust Audit Banner -->
+  <rect x="450" y="205" width="720" height="85" rx="8" fill="linear-gradient(135deg, #09172e, #0b2244)" stroke="#1e3a6a" stroke-width="1"/>
+  <circle cx="500" cy="247" r="28" fill="url(#badgeGrad)"/>
+  <text x="500" y="256" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold">A+</text>
+  <text x="550" y="240" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold">High-Assurance Zero-Trust MACsec Score: 100 / 100 (Grade A+)</text>
+  <text x="550" y="260" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">10/10 Pillars Passed &bull; Complies with DoD / CNSA / PCI-DSS v4.0 line-rate wire encryption</text>
+
+  <!-- SecTAG Dissection Breakdown -->
+  <rect x="450" y="305" width="720" height="155" rx="8" fill="url(#cardGrad)" stroke="#1d2847" stroke-width="1"/>
+  <text x="470" y="330" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">IEEE 802.1AE SecTAG Binary Breakdown &amp; Wireshark Hex Dump</text>
+  
+  <rect x="470" y="342" width="90" height="28" rx="4" fill="rgba(59, 130, 246, 0.25)" stroke="#3b82f6" stroke-width="1"/>
+  <text x="515" y="361" text-anchor="middle" fill="#93c5fd" font-family="monospace" font-size="11">88 E5 (Type)</text>
+
+  <rect x="568" y="342" width="75" height="28" rx="4" fill="rgba(16, 185, 129, 0.25)" stroke="#10b981" stroke-width="1"/>
+  <text x="605" y="361" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="11">2C (TCI/AN)</text>
+
+  <rect x="651" y="342" width="60" height="28" rx="4" fill="rgba(139, 92, 246, 0.25)" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="681" y="361" text-anchor="middle" fill="#c084fc" font-family="monospace" font-size="11">00 (SL)</text>
+
+  <rect x="719" y="342" width="130" height="28" rx="4" fill="rgba(245, 158, 11, 0.25)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="784" y="361" text-anchor="middle" fill="#fde68a" font-family="monospace" font-size="11">00 00 30 A2 (PN)</text>
+
+  <rect x="857" y="342" width="290" height="28" rx="4" fill="rgba(6, 182, 212, 0.25)" stroke="#06b6d4" stroke-width="1"/>
+  <text x="1002" y="361" text-anchor="middle" fill="#67e8f9" font-family="monospace" font-size="11">00 11 22 33 44 55 00 01 (SCI 8B)</text>
+
+  <!-- Wireshark Dump Box -->
+  <rect x="470" y="380" width="680" height="65" rx="4" fill="#050811" stroke="#1d2847" stroke-width="1"/>
+  <text x="485" y="402" fill="#cbd5e1" font-family="monospace" font-size="11">0000  88 e5 2c 00 00 00 30 a2  00 11 22 33 44 55 00 01  |..,...0..."3DU..|</text>
+  <text x="485" y="422" fill="#94a3b8" font-family="monospace" font-size="11">0010  5a 12 b4 89 cd ef 01 23  45 67 89 ab cd ef 01 23  |Z......#Eg......|</text>
+
+  <!-- Multi-Vendor Synthesizer -->
+  <rect x="450" y="475" width="720" height="195" rx="8" fill="url(#cardGrad)" stroke="#1d2847" stroke-width="1"/>
+  <text x="470" y="500" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">Multi-Vendor MACsec Synthesizer (Cisco / Arista / Juniper / Linux / Prometheus)</text>
+  
+  <rect x="470" y="515" width="680" height="140" rx="4" fill="#050811" stroke="#1d2847" stroke-width="1"/>
+  <text x="485" y="535" fill="#38bdf8" font-family="monospace" font-size="11">! Cisco IOS-XR MACsec &amp; MKA Configuration [IAD-DCI-SPINE-01]</text>
+  <text x="485" y="552" fill="#94a3b8" font-family="monospace" font-size="11">mka policy MKA-SECURE-POLICY</text>
+  <text x="485" y="569" fill="#94a3b8" font-family="monospace" font-size="11">  cipher-suite gcm-aes-xpn-256</text>
+  <text x="485" y="586" fill="#94a3b8" font-family="monospace" font-size="11">interface FourHundredGigE0/0/0/0</text>
+  <text x="485" y="603" fill="#10b981" font-family="monospace" font-size="11">  mtu 9032</text>
+  <text x="485" y="620" fill="#38bdf8" font-family="monospace" font-size="11">  macsec policy MACSEC-CORE-POLICY</text>
+  <text x="485" y="637" fill="#38bdf8" font-family="monospace" font-size="11">  mka policy MKA-SECURE-POLICY</text>
+</svg>
